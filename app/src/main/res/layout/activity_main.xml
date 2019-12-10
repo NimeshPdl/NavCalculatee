@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#569523"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="200dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:text="Add a Numbers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnreverseofnumber"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="5dp"
+        android:text="Swaping Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnadd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnpalindrome"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="Palindrome"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentcontainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnadd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnautomophic"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:text="Automorphic Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnadd" />
+
+
+    <LinearLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#76E276"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnautomophic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
